@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Your Information</legend>
+          <div>
+            <label for="firstname">First Name:</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Enter your first name"/>
+            <label for="lastname">Last Name:</label>
+            <input id="lastname"  type="text" name="lastname" placeholder="Enter your last name"/>
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="message">Your message:</label>
+          <p><textarea id="message" name="message" autofocus="on" maxlength="500" placeholder="Please be consice." cols="100" rows="5" required></textarea></p>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
